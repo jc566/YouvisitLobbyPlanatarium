@@ -84,7 +84,6 @@
     <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoSceneManager.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\GVRDemo\GVRDemoManager.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Scripts\GVRDemo\Teleport.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\KeyboardDemo\KeyboardDelegateExample.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\PermissionsDemo\PermissionsFlowManager.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\ScrollingUIDemo\PaginatedScrolling\JumpToPage.cs" />
@@ -190,6 +189,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\Scripts\IGvrGazeResponder.cs" />
+    <Compile Include="Assets\Scripts\SpinScript.cs" />
     <Compile Include="Assets\Scripts\VRInteractable.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,24 +1,14 @@
-﻿// Copyright 2014 Google Inc. All rights reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-using UnityEngine;
+﻿using UnityEngine;
 
 using System.Collections;
 
 [RequireComponent(typeof(Collider))]
 public class VRInteractable : MonoBehaviour
 {
+    //saves the original spin speed of an object with the spinScript attached
+    public float savedSpinSpeed; 
+
+
     private Vector3 startingPosition;
 
     //public Material inactiveMaterial;
@@ -39,8 +29,8 @@ public class VRInteractable : MonoBehaviour
         }
         GetComponent<Renderer>().material.color = gazedAt ? Color.green : Color.red;*/
 
-        Debug.Log(gazedAt);
-       
+        //Debug.Log(gazedAt);
+        printMessage();
 
     }
 
@@ -48,7 +38,31 @@ public class VRInteractable : MonoBehaviour
     {
         transform.localPosition = startingPosition;
     }
+    /************************************
+     * spinScript.cs Altering Functions *
+     ***********************************/
+    //Increase the Spin Speed of an Object that has the spinScript attached.
+    public void IncreaseSpinSpeed(bool gazedAt)
+    {
+        //Save the original spinning speed
+        savedSpinSpeed = this.gameObject.GetComponent<SpinScript>().spinSpeed;
+        //Change the spin speed. Can change 100.0f to a variable in case we want to randomize this number.
+        this.gameObject.GetComponent<SpinScript>().spinSpeed = 100.0f;
+    }
+    //Revert the Spin Speed of an Object that has the spinScript attached to its original speed.
+    public void RevertSpinSpeed(bool gazedAt)
+    {
+        //Restore the originally saved Speed
+        this.gameObject.GetComponent<SpinScript>().spinSpeed = savedSpinSpeed;
+    }
+    //Changes the Spin Direction of an Object that has the spinScript attached.
+    public void ChangeSpinDirection(bool gazedAt)
+    {
+        this.gameObject.GetComponent<SpinScript>().spinSpeed *= -1.0f; 
+    }
 
+
+    //Print a Debug.log message
     public void printMessage()
     {
         Debug.Log("This is Working");
@@ -68,11 +82,5 @@ public class VRInteractable : MonoBehaviour
 #endif  // !UNITY_EDITOR
     }
 
-    public void TeleportRandomly()
-    {
-        Vector3 direction = Random.onUnitSphere;
-        direction.y = Mathf.Clamp(direction.y, 0.5f, 1f);
-        float distance = 2 * Random.value + 1.5f;
-        transform.localPosition = direction * distance;
-    }
+   
 }
