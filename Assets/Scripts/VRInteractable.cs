@@ -6,13 +6,18 @@ using System.Collections;
 public class VRInteractable : MonoBehaviour
 {
     //saves the original spin speed of an object with the spinScript attached
-    public float savedSpinSpeed; 
+    public float savedSpinSpeed;
 
+    //Material used when the object is not being gazed at
+    public Material inactiveMaterial;
+
+    //Material used when the object is being gazed at
+    public Material activeMaterial;
 
     private Vector3 startingPosition;
 
-    //public Material inactiveMaterial;
-    //public Material gazedAtMaterial;
+    //The amount to scale an object with SizeChangeScript.cs attached
+    private const float ScaleAmount = 0.07f;
 
     void Start()
     {
@@ -58,9 +63,33 @@ public class VRInteractable : MonoBehaviour
     //Changes the Spin Direction of an Object that has the spinScript attached.
     public void ChangeSpinDirection(bool gazedAt)
     {
-        this.gameObject.GetComponent<SpinScript>().spinSpeed *= -1.0f; 
+        this.gameObject.GetComponent<SpinScript>().spinSpeed *= -1.0f;
+    }
+    /************************************
+     * SizeChangeScript.cs Altering Functions *
+     ***********************************/
+    //Changes the color and material, and increases the scale of an object with SizeChangeScript.cs attached.
+    public void IncreaseSize()
+    {
+        GetComponent<MeshRenderer>().material = activeMaterial;
+        GetComponent<MeshRenderer>().material.color = Color.green;
+        this.gameObject.GetComponent<SizeChangeScript>().scaleAmount = ScaleAmount;
+    }
+    //Changes the material, and decreases the scale of an object with SizeChangeScript.cs attached.
+    public void DecreaseSize()
+    {
+        GetComponent<MeshRenderer>().material = inactiveMaterial;
+        this.gameObject.GetComponent<SizeChangeScript>().scaleAmount = -ScaleAmount;
     }
 
+    /**************************************************
+     * Planet Explosion triggered from BlowUpDelay.cs *
+     *************************************************/
+    //Planet Blows up
+    public void triggerPlanetExplosion()
+    {
+        this.gameObject.GetComponent<BlowUpDelay>().startCoroutineBlowup();
+    }
 
     //Print a Debug.log message
     public void printMessage()
