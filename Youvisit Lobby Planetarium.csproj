@@ -188,6 +188,8 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrMathHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\Jacob\Scripts\RandomSpawn.cs" />
+    <Compile Include="Assets\Jacob\Scripts\comet_move.cs" />
     <Compile Include="Assets\Particlecollection\Plugins\Effect\Script\CameraTarget.cs" />
     <Compile Include="Assets\Particlecollection\Plugins\Effect\Script\EffectController.cs" />
     <Compile Include="Assets\Particlecollection\Plugins\Effect\Script\EffectDemo.cs" />
@@ -199,8 +201,10 @@
     <Compile Include="Assets\Scripts\PlanetScripts\BlowUpDelay.cs" />
     <Compile Include="Assets\Scripts\PlanetScripts\SizeChangeScript.cs" />
     <Compile Include="Assets\Scripts\PlanetScripts\SpinScript.cs" />
+    <Compile Include="Assets\Scripts\SunScripts\AnimatingTexture.cs" />
     <Compile Include="Assets\Scripts\SupernovaScripts\GrowingLight.cs" />
     <Compile Include="Assets\Scripts\SupernovaScripts\Modded_fire_inhale_Script.cs" />
+    <Compile Include="Assets\Scripts\SupernovaScripts\Modded_fire_soft.cs" />
     <Compile Include="Assets\Scripts\VRInteractable.cs" />
   </ItemGroup>
   <ItemGroup>
