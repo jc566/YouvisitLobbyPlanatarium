@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrowingLight : MonoBehaviour {
 
     public Light supernovaLight;
+    public float maxRange;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +19,9 @@ public class GrowingLight : MonoBehaviour {
 
     void lightGrowth()
     {
-        supernovaLight.range += .02f;
+        if (supernovaLight.range <= maxRange)
+        {
+            supernovaLight.range += .02f;
+        }
     }
 }

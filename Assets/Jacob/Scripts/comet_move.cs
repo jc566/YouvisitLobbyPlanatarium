@@ -23,7 +23,7 @@ public class comet_move : MonoBehaviour {
 
         timer -= Time.deltaTime;
         
-        body.velocity += transform.forward * Time.deltaTime * 4;
+        body.velocity += -transform.forward * Time.deltaTime * 4;
         
         if(timer < 0)
         {

@@ -6,6 +6,7 @@ public class Modded_fire_inhale_Script : MonoBehaviour {
     public ParticleSystem PSone; //Flares going towards the Center
     public ParticleSystem PStwo; //Inner flares going towards the Center
     public ParticleSystem PSthree;
+    public float maxScale;
 
     //Variables to change PSones Emission Rate
     private float EMrate = 1.0f;
@@ -43,7 +44,10 @@ public class Modded_fire_inhale_Script : MonoBehaviour {
          * Scale Changes * 
          ****************/
         //Gradually Change the size of the Particles
-        PSone.transform.localScale = new Vector3(scaleX+=0.001f, scaleY+=0.001f, scaleZ+=0.001f);
+        if (scaleX <= maxScale)
+        {
+            PSone.transform.localScale = new Vector3(scaleX += 0.001f, scaleY += 0.001f, scaleZ += 0.001f);
+        }
     }
 
     public void alterPStwo()
