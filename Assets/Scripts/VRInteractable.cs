@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿/************************************************************
+ * This script was created by :                             *
+ * Joseph Choi / Jacob Maher / Shannon Hargrove / Lin Chen  *
+ ***********************************************************/
+using UnityEngine;
 
 using System.Collections;
 
@@ -21,7 +25,7 @@ public class VRInteractable : MonoBehaviour
 
     void Start()
     {
-        startingPosition = transform.localPosition;
+        //startingPosition = transform.localPosition;
         SetGazedAt(false);
     }
 
@@ -41,7 +45,7 @@ public class VRInteractable : MonoBehaviour
 
     public void Reset()
     {
-        transform.localPosition = startingPosition;
+        //transform.localPosition = startingPosition;
     }
     /************************************
      * spinScript.cs Altering Functions *
