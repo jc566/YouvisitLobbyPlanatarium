@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 09e9a82442433c14984fd64753555e66, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -689,8 +689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c173f7c6a736fe469d4acc5b108d6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joint: 0
-  debugDrawTo: {fileID: 0}
 --- !u!1 &329738996
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,11 +736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa952cbcc0eb13d4ca558b6da550ff55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumAlpha: 1
-  material_idle: {fileID: 0}
-  material_app: {fileID: 0}
-  material_system: {fileID: 0}
-  material_touchpad: {fileID: 0}
 --- !u!23 &329738999
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1353,14 +1346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6214420881d1dd0428d32f7bdc5fde31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumAlpha: 1
-  matUnknown: {fileID: 0}
-  matCharging: {fileID: 0}
-  matFull: {fileID: 0}
-  matAlmostFull: {fileID: 0}
-  matMedium: {fileID: 0}
-  matLow: {fileID: 0}
-  matCriticalLow: {fileID: 0}
 --- !u!23 &529135276
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1892,9 +1877,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66baa93a294455a4bbc75c4789678a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumAlpha: 1
-  touchTransparent: {fileID: 0}
-  touchOpaque: {fileID: 0}
 --- !u!23 &732410017
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2102,11 +2084,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b65678ccdd949e9a58874d2880c0ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserColor: {r: 1, g: 1, b: 1, a: 0.25}
-  maxLaserDistance: 0.75
-  maxReticleDistance: 2.5
-  reticle: {fileID: 0}
-  reticleSortingOrder: 32767
 --- !u!114 &758186428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2119,8 +2096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c173f7c6a736fe469d4acc5b108d6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joint: 0
-  debugDrawTo: {fileID: 0}
 --- !u!1 &770516801
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,9 +2323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c52851ea0de74a228fa29a84de008ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: 0
-  text: {fileID: 0}
-  alwaysVisible: 0
 --- !u!222 &810320091
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2496,9 +2468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c52851ea0de74a228fa29a84de008ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: 0
-  text: {fileID: 0}
-  alwaysVisible: 0
 --- !u!222 &874070643
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2515,6 +2484,8 @@ GameObject:
   m_Component:
   - component: {fileID: 907292808}
   - component: {fileID: 907292809}
+  - component: {fileID: 907292811}
+  - component: {fileID: 907292810}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2565,6 +2536,105 @@ MonoBehaviour:
   - {fileID: 1587657774792630, guid: e72c25fc2db08d14089f2ec261693555, type: 2}
   - {fileID: 1984888024576924, guid: 78d8ff1a791979043ae76d45ac08fc9f, type: 2}
   timer: 10
+--- !u!114 &907292810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907292807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edce1ce21f376e40867a0657e467a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radio: {fileID: 907292811}
+  songs:
+  - {fileID: 8300000, guid: 7a30723a01092584e85e45365e8088a4, type: 3}
+  - {fileID: 8300000, guid: bd39d06512758ce498b6d0f58eb8acf8, type: 3}
+  - {fileID: 8300000, guid: 8782426d3b9cc8b4ab1ac74174b71bdd, type: 3}
+  - {fileID: 8300000, guid: aaebcac16d74d664db9745f9dc648a08, type: 3}
+  - {fileID: 8300000, guid: a5c5f4c89efb88341b930c134c43b06d, type: 3}
+  curretnsong: {fileID: 0}
+--- !u!82 &907292811
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907292807}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &919052974
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,6 +3057,7 @@ GameObject:
   - component: {fileID: 959308589}
   - component: {fileID: 959308588}
   - component: {fileID: 959308594}
+  - component: {fileID: 959308595}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3101,6 +3172,14 @@ MonoBehaviour:
   raycasterEventMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!45 &959308595
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 959308587}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: ec8844cc3c8900048b7757a15ffe36b8, type: 2}
 --- !u!1 &1033037573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,9 +3496,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c52851ea0de74a228fa29a84de008ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: 0
-  text: {fileID: 0}
-  alwaysVisible: 0
 --- !u!222 &1130811622
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4333,9 +4409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c52851ea0de74a228fa29a84de008ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: 0
-  text: {fileID: 0}
-  alwaysVisible: 0
 --- !u!222 &1440308546
 CanvasRenderer:
   m_ObjectHideFlags: 0

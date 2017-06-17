@@ -188,6 +188,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrMathHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\Jacob\Scripts\Back_Sound.cs" />
     <Compile Include="Assets\Jacob\Scripts\RandomSpawn.cs" />
     <Compile Include="Assets\Jacob\Scripts\comet_move.cs" />
     <Compile Include="Assets\Particlecollection\Plugins\Effect\Script\CameraTarget.cs" />
