@@ -203,6 +203,7 @@
     <Compile Include="Assets\Scripts\PlanetScripts\SizeChangeScript.cs" />
     <Compile Include="Assets\Scripts\PlanetScripts\SpinScript.cs" />
     <Compile Include="Assets\Scripts\SunScripts\AnimatingTexture.cs" />
+    <Compile Include="Assets\Scripts\SunScripts\SunColorChange.cs" />
     <Compile Include="Assets\Scripts\SupernovaScripts\ChangeLightColor.cs" />
     <Compile Include="Assets\Scripts\SupernovaScripts\GrowingLight.cs" />
     <Compile Include="Assets\Scripts\SupernovaScripts\Modded_fire_inhale_Script.cs" />
