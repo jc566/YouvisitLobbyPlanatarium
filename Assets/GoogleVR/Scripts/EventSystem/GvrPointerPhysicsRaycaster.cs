@@ -69,7 +69,7 @@ public class GvrPointerPhysicsRaycaster : GvrBasePointerRaycaster {
     if (eventCamera == null) {
       return;
     }
-
+    
     if (!IsPointerAvailable()) {
       return;
     }
@@ -78,6 +78,9 @@ public class GvrPointerPhysicsRaycaster : GvrBasePointerRaycaster {
     float dist = eventCamera.farClipPlane - eventCamera.nearClipPlane;
     float radius = PointerRadius;
     RaycastHit[] hits;
+
+
+    
 
     if (radius > 0.0f) {
       hits = Physics.SphereCastAll(ray, radius, dist, finalEventMask);
@@ -88,6 +91,10 @@ public class GvrPointerPhysicsRaycaster : GvrBasePointerRaycaster {
     if (hits.Length == 0) {
       return;
     }
+
+  
+    
+
 
     System.Array.Sort(hits, (r1, r2) => r1.distance.CompareTo(r2.distance));
 

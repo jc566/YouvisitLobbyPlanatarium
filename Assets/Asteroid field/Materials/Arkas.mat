@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Arkas
+  m_Shader: {fileID: 4800000, guid: 5246a2eb39114634c915f6e41e484cf5, type: 3}
+  m_ShaderKeywords: _CLOUDS_ON _METALLICGLOSSMAP _NIGHTEMISSIVECITIES_ON _NORMALMAP
+    _SUBATMOSPHERE_ON _USENORMALMAP_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: b592718133ef39341b232e4989c59022, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 445b9a093b5c9664aaa10020c5b493c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CloudsAlpha:
+        m_Texture: {fileID: 2800000, guid: cc79d4bdc6ba64f4988c3addf3ea579a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cloudstexture:
+        m_Texture: {fileID: 2800000, guid: d630c83ab5776f846bbfc6f98cfd368f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Emissive:
+        m_Texture: {fileID: 2800000, guid: e761d1b5f99e4c840b58081a41de20d6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Emissivecities:
+        m_Texture: {fileID: 2800000, guid: e761d1b5f99e4c840b58081a41de20d6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LookupSunset:
+        m_Texture: {fileID: 2800000, guid: 3c94491068797e54b9d16576eeb33a8c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lookupramp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LookuprampSunset:
+        m_Texture: {fileID: 2800000, guid: 3c94491068797e54b9d16576eeb33a8c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: b592718133ef39341b232e4989c59022, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetalRGBRoughA:
+        m_Texture: {fileID: 2800000, guid: df7bba8028b1b8e4687b0b75f993082b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetalRough:
+        m_Texture: {fileID: 2800000, guid: df7bba8028b1b8e4687b0b75f993082b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: df7bba8028b1b8e4687b0b75f993082b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normalmap:
+        m_Texture: {fileID: 2800000, guid: 445b9a093b5c9664aaa10020c5b493c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: 2d1cde5f9aca96c439fa054dd60fc4fb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Specular:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _watermask:
+        m_Texture: {fileID: 2800000, guid: df7bba8028b1b8e4687b0b75f993082b, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Ambiantatmosphereintensity: 1
+    - _Atmosphere: 0
+    - _Atmospherepower: 1
+    - _BumpScale: -1
+    - _Citiesintensity: 5
+    - _Clouds: 1
+    - _Cloudspeed: 0.0451
+    - _Cutoff: 0.5
+    - _Desactivateclouds: 0
+    - _Desaturation: 0.041
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Gloss: 0.853
+    - _Glossiness: 0.5
+    - _Metallic: 0
+    - _Mode: 0
+    - _Nightemissive: 0
+    - _Nightemissivecities: 1
+    - _Normalintensity: 1
+    - _OcclusionStrength: 0
+    - _Parallax: 0.02
+    - _Specularpower: 1
+    - _SrcBlend: 1
+    - _SubAtmosphere: 1
+    - _SubAtmospherepower: 1
+    - _Subatmosphereglobalintensity: 1.5
+    - _Subatmosphereintensity: 0.96
+    - _Subatmospherepower: 2.19
+    - _UVSec: 0
+    - _UseNormalmap: 1
+    - _ZWrite: 1
+    - __dirty: 1
+    - _node_1025: 1
+    - _node_4321: 0
+    - _node_4402: 0
+    - _node_513: 1
+    - _node_5395: 0.5
+    - _node_6758: 0
+    - _node_8533: 0
+    - _node_9558: 0
+    - _node_9953: 1
+    m_Colors:
+    - _Albedocolor: {r: 0, g: 0, b: 0, a: 1}
+    - _Ambiantatmospherecolor: {r: 0, g: 0, b: 0, a: 1}
+    - _Ambiantcolor: {r: 0, g: 0, b: 0, a: 0}
+    - _Citiescolor: {r: 1, g: 1, b: 1, a: 0}
+    - _Citycolor: {r: 1, g: 1, b: 1, a: 1}
+    - _Cloudscolo: {r: 1, g: 1, b: 1, a: 1}
+    - _Cloudscolor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Specularcolor: {r: 1, g: 0.7735736, b: 0.3455882, a: 1}
+    - _Subatmospherecolor: {r: 0.41900003, g: 0.836158, b: 1, a: 1}
+    - _cloudscolor: {r: 1, g: 1, b: 1, a: 0}
+    - _node_2409: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _node_3849: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _node_4773: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _node_6372: {r: 0.5, g: 0.5, b: 1, a: 1}
+    - _node_64: {r: 0.5, g: 0.5, b: 1, a: 1}
+    - _node_64_copy: {r: 1, g: 0.5, b: 0.5, a: 1}
+    - _node_64_copy_copy: {r: 0.5, g: 1, b: 0.5, a: 1}
+    - _node_7883: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _node_8608: {r: 1, g: 0, b: 0, a: 1}

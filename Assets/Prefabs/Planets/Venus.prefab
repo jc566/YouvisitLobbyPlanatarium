@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 135538333264736932}
   - component: {fileID: 114886961008149758}
   - component: {fileID: 114458727689883212}
+  - component: {fileID: 114704052756491316}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -97,6 +98,20 @@ MonoBehaviour:
   savedSpinSpeed: 0
   inactiveMaterial: {fileID: 0}
   activeMaterial: {fileID: 0}
+--- !u!114 &114704052756491316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205990042195936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97e0e0720f34854c97283422951626f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 20
+  speed: 100
+  centralObject: {fileID: 0}
 --- !u!114 &114886961008149758
 MonoBehaviour:
   m_ObjectHideFlags: 1

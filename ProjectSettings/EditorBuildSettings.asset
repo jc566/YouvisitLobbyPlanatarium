@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SceneToLoad.unity
+    guid: fdf936673c97a9d46b311ed1552ccd65
+  - enabled: 1
+    path: Assets/Scenes/Planeterium.unity
+    guid: c4212da181cbd704f9fd05b328b40cef

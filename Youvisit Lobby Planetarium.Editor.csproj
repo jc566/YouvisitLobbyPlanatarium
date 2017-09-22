@@ -126,6 +126,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GoogleVR\AndroidUltimatePlugin\Common\Extension\UGUI\Editor\uGUITools.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Editor\DemoInputManagerEditor.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Editor\PermissionsDemoBuildEditor.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\ScrollingUIDemo\Editor\PagedScrollbarEditor.cs" />
@@ -146,6 +147,22 @@
     <Compile Include="Assets\Particlecollection\Plugins\Effect\Editor\XUIUtils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Asteroid field\READ ME.txt" />
+    <None Include="Assets\Asteroid field\Shaders\Atmosphere - Copy.shader" />
+    <None Include="Assets\Asteroid field\Shaders\Atmosphere ASE.shader" />
+    <None Include="Assets\Asteroid field\Shaders\Atmosphere sun.shader" />
+    <None Include="Assets\Asteroid field\Shaders\Atmosphere.shader" />
+    <None Include="Assets\Asteroid field\Shaders\Planet - Transparency.shader" />
+    <None Include="Assets\Asteroid field\Shaders\Planet.shader" />
+    <None Include="Assets\Asteroid field\Shaders\Rings.shader" />
+    <None Include="Assets\Asteroid field\Shaders\Soleil.shader" />
+    <None Include="Assets\Asteroid field\Shaders\Sun.shader" />
+    <None Include="Assets\Asteroid field\Shaders\corona 1.shader" />
+    <None Include="Assets\Asteroid field\Shaders\corona.shader" />
+    <None Include="Assets\Asteroid field\Shaders\planet shader.shader" />
+    <None Include="Assets\GoogleVR\AndroidUltimatePlugin\ChangeLog.txt" />
+    <None Include="Assets\GoogleVR\AndroidUltimatePlugin\Features.txt" />
+    <None Include="Assets\GoogleVR\AndroidUltimatePlugin\HowToUse.txt" />
     <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoUnlitGrayscaleToColor.shader" />
@@ -160,6 +177,7 @@
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
+    <None Include="Assets\Hole4.shader" />
     <None Include="Assets\Particlecollection\Plugins\Effect\Shader\ParticleAddEffect.shader" />
     <None Include="Assets\Particlecollection\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
     <None Include="Assets\Particlecollection\Plugins\Effect\Shader\ParticleBlendEffect.shader" />
@@ -168,7 +186,13 @@
     <None Include="Assets\Particlecollection\READ ME.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Cardboard.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
+    <None Include="Assets\Plugins\Android\aup\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\aup\res\layout\ac_image_grid.xml" />
+    <None Include="Assets\Plugins\Android\aup\res\layout\cameralayout.xml" />
+    <None Include="Assets\Plugins\Android\aup\res\layout\row_multiphoto_item.xml" />
     <None Include="Assets\Plugins\Android\proguard-gvr.txt" />
+    <None Include="Assets\Shader\Default_OverlayNoZTest.shader" />
+    <None Include="Assets\read me.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

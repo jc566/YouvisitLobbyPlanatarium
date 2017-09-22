@@ -1,48 +1,58 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PopWindowOver : MonoBehaviour {
-    [SerializeField]
-    private string title = "My Window";
-    [SerializeField]
-    private static float windowWidth = 200f;
-    [SerializeField]
-    private static float windowHeight = 250f;
-    [SerializeField]
-    private string text = "This is the text Area";
 
-    public GUIStyle textStyle;
+    //public GameObject Parent;
+    public Canvas newCanva;
 
-    private Rect windowRect = new Rect(Screen.width/2, Screen.height/2, windowWidth, windowHeight);
-    // Use this for initialization
+    //public GameObject Canva_location;
+    public string text_content;
+
+    //public GameObject Text_area;
+    public Text textarea;
+
+
     private bool gazeOver = false;
 
+    void Start()
+    {
+        //newCanva.gameObject.SetActive(false);
+
+        //locate the canvas on player
+        newCanva = GameObject.FindGameObjectWithTag("MainCamera").GetComponentInChildren<Canvas>();
+        //locate the text box on player for the canvas
+        textarea = GameObject.FindGameObjectWithTag("MainCamera").GetComponentInChildren<Text>();
+    }
+
+    //Show canva when reticle is hover at object;
     public void GazeEnter()
     {
-        gazeOver = true;
+//        textarea.text = text_content;
+     //   newCanva.gameObject.SetActive(true);
     }
 
+    //Hide canva when reticle is no longer hover at object;
     public void GazeExit()
     {
-        gazeOver = false;
+        newCanva.gameObject.SetActive(false);
     }
 
-    void Update()
-    {
-        //Define the window's position
-        windowRect.x = (Screen.width - windowWidth) / 2;
-        windowRect.y = (Screen.height - windowHeight) / 2 - Screen.height * 0.3f;
-    }
 
-    void OnGUI()
+    //Toggle on and off the canva.  
+    public void TaggleOnAndOf()
     {
-        if (gazeOver)  //Draw window if this is true;
-            windowRect = GUI.Window(0, windowRect, DoMyWindow, title);
-    }
-    void DoMyWindow(int windowID)
-    {
-        //The component of the window.
-        GUI.TextField(new Rect(20, 30, (windowWidth - (0.2f * windowWidth)), (windowHeight - (0.5f * windowHeight))), text, textStyle);
+        //Deactivate the Canva if Canva is already actived, otherwise active the canva.  
+        if (newCanva.gameObject.activeInHierarchy)
+        {
+            newCanva.gameObject.SetActive(false);
+        }
+        else
+        {
+            textarea.text = text_content;
+            newCanva.gameObject.SetActive(true);
+        }
     }
 }

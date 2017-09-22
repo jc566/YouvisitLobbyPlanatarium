@@ -1,0 +1,1 @@
+To access optimal visual quality, please download and import the Unity asset "Post process stack" available for free on the asset store here : https://www.assetstore.unity3d.com/en/#!/content/83912
